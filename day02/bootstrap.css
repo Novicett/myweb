@@ -1,0 +1,62 @@
+h2{
+    color: red;
+}
+
+.highlight{
+    width: 100%;
+    height: 100%;
+}
+
+#profile{
+    border: solid;
+    border-color: blue;
+    width: 100%;
+    height: 100%;
+}
+
+.divi{
+display: grid;
+grid-template-columns: 1fr 1fr 1fr;
+}
+
+.divi2{
+width: 100%;
+}
+
+#myhot{
+display: grid;
+grid-template-columns: 1fr 1fr 1fr;
+
+border-top: 1px solid gray;
+border-bottom: 1px solid gray;
+
+margin-top: 5px;
+margin-bottom: 5px;
+}
+
+
+.hot1{
+text-align: center;
+}
+
+
+.circle{
+width: 50px;
+height: 50px;
+border: solid white 1px;
+border-radius: 50%;
+object-fit: cover;
+}
+
+.highlight_pic{
+width: 35px;
+height: 35px;
+border: solid white 1px;
+border-radius: 50%;
+object-fit: cover;
+}
+
+.highlight_divi{
+display: grid;
+grid-template-rows: 1fr 1fr 1fr;
+}
