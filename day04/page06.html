@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script>
+        $(function() {
+            $("#b1").click(function () {
+                money=$("#money").val()
+                cash=$("#cash").val()
+                if (cash==1) {
+                    sum=money-(2000)
+                    $("#result").html(sum)
+                }
+            })
+
+            
+        })
+    </script>
+</head>
+<body>
+    <table>
+        <tr>
+            <td>결제금액 :</td>
+            <td><input type="text" id="money"></td>
+        </tr>
+        <tr>
+            <td>1)계좌이체,</td>
+            <td>2)신용카드,3)휴대폰결제</td>
+        </tr>
+        <tr>
+            <td>결제수단 :</td>
+            <td><input type="text" id="cash"></td>
+            <td><button id="b1">결제하기</button></td>
+        </tr>
+    </table>
+    <hr>
+    <table>
+        <tr>
+           <td>회원가입할 id 입력 :</td>
+           <td><input type="text"></td>
+           <td><button>회원가입시 id중복 체크</button></td> 
+        </tr>
+    </table>
+    <hr>
+    <table>
+        <tr>
+            <td>인증받을 전화번호 입력:</td>
+            <td><input type="text"></td>
+            <td><button>인증번호 받기</button></td> 
+         </tr>
+    </table>
+    <hr>
+    <div id="result" >
+
+    </div>
+</body>
+</html>

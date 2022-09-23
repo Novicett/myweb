@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script>
+       $(function() {
+            $("#img").click(function () {
+                $("#result").append('<img src="https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMjA4MTVfMjA5%2FMDAxNjYwNTYwMzg2ODg4.gvBh_ZLwJrIWNk3-pSKVIA_L3VKkWXeFoNJL0gxHMosg.5rHPuMK8qZq8uOUwBJpNbFDyiRcEGLA3T9f9Gvrmt1Mg.JPEG.japbu%2Fkkum328.jpg&type=a340">'+"<br>")
+            })
+            $('#b1').click(function() {
+                idValue=$('#ch').val()
+                $("#result").append(idValue+"<br>")
+            })
+            $("#b2").click(function () {
+                idValue2=$('#ch2').val()
+                $("#result").append('<img src="https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMjA4MTVfMjA5%2FMDAxNjYwNTYwMzg2ODg4.gvBh_ZLwJrIWNk3-pSKVIA_L3VKkWXeFoNJL0gxHMosg.5rHPuMK8qZq8uOUwBJpNbFDyiRcEGLA3T9f9Gvrmt1Mg.JPEG.japbu%2Fkkum328.jpg&type=a340">'+"<br>")
+                $("#result").append(idValue2+"<br>")
+            })
+
+       })
+       
+    </script>
+</head>
+<body>
+    <button id="img">이미지 추가</button><br>
+    댓글 1: <input type="text" id="ch"> <button id="b1">댓글 추가</button><br>
+    댓글 2: <input type="text" id="ch2"> <button id="b2">이미지+댓글 추가</button><br>
+    <hr>
+    <div id="result"></div>
+</body>
+</html>
